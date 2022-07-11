@@ -1,4 +1,5 @@
 # iSpindel Monitor
+This is an open source package consisting of a frontend and backend that captures and displays data from the iSpindel  https://www.ispindel.de/
 
 ## Notes
 * I believe this is the payload iSpindel sends as a POST: https://github.com/universam1/iSpindel/blob/master/pio/src/iSpindel.cpp#L683-L693
@@ -19,4 +20,6 @@
 	PRIMARY KEY("id" AUTOINCREMENT)
 );`
 
-`CREATE TABLE devices(id INTEGER PRIMARY KEY AUTOINCREMENT, user text, device_name text, temperature_units text, battery real, rssi real, interval integer, timestamp DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL);`
+
+## License
+Beerware 🍺
