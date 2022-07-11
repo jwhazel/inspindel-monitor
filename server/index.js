@@ -54,7 +54,7 @@ app.get("/api/fermentation-data/:user/", (req, res) => {
       const interval = data[i].epoch - data[i - 1].epoch;
       if (interval !== lastInterval) {
         instances.push({
-          deviceName: data[0].device_name,
+          deviceName: data[i].device_name,
           startDate: lastStartingDate,
           endDate: data[i].timestamp,
         });
